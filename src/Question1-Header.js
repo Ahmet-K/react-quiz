@@ -1,4 +1,4 @@
-/* DELETE THIS LINE AND WRITE THE ANSWER TO QUESTION 1 HERE */
+import React from "react";
 
 /*
  * ============= Question 1 =============
@@ -7,6 +7,7 @@
  *
  * Identify what it should be and write it on line 1 above.
  */
+
 
 function Header() {
   return (

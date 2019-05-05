@@ -4,19 +4,23 @@
  * Convert the MonkeysExhibit component below to a class component.
  */
 
-import React from "react";
+import React, {Component} from "react";
 
-function MonkeysExhibit(props) {
+class MonkeysExhibit extends Component {
+  render(){
   return (
+    <span>
     <section className="monkeys">
-      <h2>Latin name: {props.latinName}</h2>
+      <h2>Latin name: {this.props.latinName}</h2>
       <ul>
-        {props.commonSpecies.map((speciesName, index) => {
+        {this.props.commonSpecies.map((speciesName, index) => {
           return <li key={index}>{speciesName}</li>;
         })}
       </ul>
     </section>
+    </span>
   );
+}
 }
 
 export default MonkeysExhibit;
